@@ -1,0 +1,62 @@
+{
+  "version": "8",
+  "dialect": "postgres",
+  "id": "33f09ac7-b010-4318-8933-86162ec67148",
+  "prevIds": ["00000000-0000-0000-0000-000000000000"],
+  "ddl": [
+    {
+      "isRlsEnabled": false,
+      "name": "wallet_favorites",
+      "entityType": "tables",
+      "schema": "public"
+    },
+    {
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "wallet",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "wallet_favorites"
+    },
+    {
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "pool",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "wallet_favorites"
+    },
+    {
+      "type": "timestamp with time zone",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "now()",
+      "generated": null,
+      "identity": null,
+      "name": "created_at",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "wallet_favorites"
+    },
+    {
+      "columns": ["wallet", "pool"],
+      "nameExplicit": false,
+      "name": "wallet_favorites_pkey",
+      "entityType": "pks",
+      "schema": "public",
+      "table": "wallet_favorites"
+    }
+  ],
+  "renames": []
+}
