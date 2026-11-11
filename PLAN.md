@@ -61,3 +61,4 @@ Priority order agreed for the next phase of the terminal:
 6. ⏳ **On-chain metrics dashboard.** Pool creation velocity, unique traders, Mana usage patterns, holder concentration. Depends on the swap indexer (section 3).
 7. ⏳ **Cloud alerts.** Price, volume spike, new pool and large-swap alerts evaluated by a scheduled function, delivered to Telegram/Discord/email while the browser is closed.
 8. Later: broader exchange syncing beyond KoinDX and sentiment sources.
+9. all above complete, we will now monitor the dex for any bugs or issues.
