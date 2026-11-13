@@ -68,7 +68,7 @@ function TierLegend() {
         const next = TRADER_TIERS[i + 1]
         return (
           <div key={t.id} className="flex items-center gap-2">
-            <TraderTierIcon tier={t.id} className="text-current" />
+            <TraderTierIcon tier={t.id} />
             <span className="w-14">{t.label}</span>
             <span className="num">
               {next ? `${usd0(t.min)}–${usd0(next.min)}` : `${usd0(t.min)}+`}

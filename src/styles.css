@@ -22,6 +22,13 @@ code {
   --font-numeric: 'JetBrains Mono', ui-monospace, monospace;
   --up: oklch(0.6 0.15 158);
   --down: oklch(0.58 0.21 22);
+  /* Trader tier icons, coloured after each animal. Mid lightness so they read
+     on the light page and on the dark tooltip legend. */
+  --tier-plankton: oklch(0.66 0.15 135);
+  --tier-fish: oklch(0.7 0.16 62);
+  --tier-shrimp: oklch(0.68 0.17 355);
+  --tier-dolphin: oklch(0.64 0.09 235);
+  --tier-whale: oklch(0.55 0.17 262);
   --content-width: 88rem;
   --reading-width: 42rem;
   --background: oklch(0.985 0.008 195);
@@ -65,6 +72,11 @@ code {
   --font-mono: var(--font-numeric);
   --color-up: var(--up);
   --color-down: var(--down);
+  --color-tier-plankton: var(--tier-plankton);
+  --color-tier-fish: var(--tier-fish);
+  --color-tier-shrimp: var(--tier-shrimp);
+  --color-tier-dolphin: var(--tier-dolphin);
+  --color-tier-whale: var(--tier-whale);
   --container-content: var(--content-width);
   --container-reading: var(--reading-width);
   --color-background: var(--background);
