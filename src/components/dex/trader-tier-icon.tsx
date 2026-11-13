@@ -69,11 +69,11 @@ const ICONS = {
 } satisfies Record<TraderTier['id'], unknown>
 
 const TONE: Record<TraderTier['id'], string> = {
-  plankton: 'text-muted-foreground/70',
-  fish: 'text-muted-foreground',
-  shrimp: 'text-foreground/70',
-  dolphin: 'text-primary',
-  whale: 'text-primary',
+  plankton: 'text-tier-plankton',
+  fish: 'text-tier-fish',
+  shrimp: 'text-tier-shrimp',
+  dolphin: 'text-tier-dolphin',
+  whale: 'text-tier-whale',
 }
 
 export function TraderTierIcon({

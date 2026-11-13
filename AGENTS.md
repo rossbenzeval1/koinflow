@@ -14,7 +14,7 @@ KoinFlow is a live trading DEX terminal for the Koinos blockchain: markets list,
 - `src/lib/use-market.ts`: reads the root loader's market snapshot and refreshes it every 15 s.
 - `src/lib/wallet.tsx` / `src/lib/swap.ts`: Kondor connection, balances and Mana, and the approve + `swap_tokens_in` transaction against the KoinDX router.
 - `src/lib/koinos.ts`: `chain.get_head_info` against `https://api.koinosblocks.com` plus `useHeadInfo()`.
-- `src/lib/trader-tier.ts`: DEX Screener-style wallet sizes (plankton → fish → shrimp → dolphin → whale) from each wallet's total USD swapped in the loaded pool history; `src/components/dex/trader-tier-icon.tsx` draws the icons and the trade tape shows them next to each account.
+- `src/lib/trader-tier.ts`: DEX Screener-style wallet sizes (plankton → fish → shrimp → dolphin → whale) from each wallet's total USD swapped in the loaded pool history; `src/components/dex/trader-tier-icon.tsx` draws the icons (each in its own animal colour, `--tier-*` in `styles.css`) and the trade tape shows them next to each account.
 - `src/lib/format.ts`: price/USD/amount/percent formatting.
 - `src/lib/indicators.ts`: pure indicator maths (SMA, EMA, RSI, MACD, VWAP, volume profile) and the `INDICATORS` registry the chart and picker read. Add an indicator by registering it there.
 - `src/lib/chart-model.ts`: chart settings schema (compare pairs, mode, indicators), ratio/rebase helpers, and `buildChartModel`, which resolves sources (`primary`, `pool:<id>`, `ratio:<id>`, `ind:<id>`) into series, scales and panes. `src/lib/use-chart-settings.ts` keeps the settings in localStorage.
